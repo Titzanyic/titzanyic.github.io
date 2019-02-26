@@ -149,8 +149,14 @@ iframe { max-width: 100%; width: 100%; border: none; }
 
 
 :root {
-    --side-bar-bg-color: #fff;
-    --control-text-color: #777;
+    --side-bar-bg-color: #f8f8f8;
+    --control-text-color: #b7b7b7;
+    --control-text-hover-color: #ffa42f;
+
+    --active-file-text-color: #ffa42f;
+    --item-hover-bg-color: #70717d;
+    --item-hover-text-color: white;
+    --primary-color: #6dc1e7;
 }
 
 /* cyrillic-ext */
@@ -187,9 +193,9 @@ html {
 
 body {
     font-family: "Helvetica Neue",Helvetica,"Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif,!important;
-    color: #777;
+    color: rgb(105, 105, 105);
     -webkit-font-smoothing: antialiased;
-    line-height: 1.6rem;
+    line-height: 1.8;
     word-spacing:2px;
     letter-spacing:2px;
     margin: 0;
@@ -203,12 +209,12 @@ body {
 }
 
 #write p {
-    line-height: 1.6rem;
-    word-spacing: .05rem;
+    line-height: inherit;
+    word-spacing:2px;
 }
 
 #write ol li {
-    text-indent: 0.5rem;
+    text-indent: -0.5rem;
 }
 
 #write > ul:first-child,
@@ -225,7 +231,7 @@ body > *:last-child {
 }
 
 a {
-    color: #ffa42f;
+  color: #ffa42f;
     font-weight: 600;
     padding: 0 2px;
     text-decoration: none;
@@ -290,8 +296,7 @@ h3 a {
 }
 
 h3 a:before {
-    content: '#';
-    color: #42b983;
+    color: #ffa42f;
     position: absolute;;
     left: -0.7em;
     margin-top: -0.05em;
@@ -301,12 +306,21 @@ h3 a:before {
     font-weight: bold;
 }
 
+img {
+  box-shadow: rgb(170, 170, 170) 0em 0em 1em 0px;
+  width: auto;
+  height: auto%;
+}
+
 h1 {
     padding-bottom: .4rem;
     font-size: 2.2rem;
     line-height: 1.3;
     color: #ffa42f;
+    text-align: center;
 }
+
+
 
 h2 {
     font-size: 1.75rem;
@@ -315,6 +329,7 @@ h2 {
     padding-bottom: 0.5em;
     border-bottom: 1px solid #ddd;
     color: #ffa42f;
+    text-align: center;
 }
 
 h3 {
@@ -322,6 +337,7 @@ h3 {
     line-height: 1.43;
     margin: 20px 0 7px;
     color: #ffa42f;
+    text-align: center;
 }
 
 h4 {
@@ -411,6 +427,7 @@ li p.first {
 ul,
 ol {
     padding-left: 30px;
+
 }
 
 ul:first-child,
@@ -616,6 +633,7 @@ table tr td:last-child {
     padding: 2px 0 0 4px;
     font-size: 0.9em;
     color: inherit;
+    box-shadow: rgb(170, 170, 170) 0em 0em 1em 0px;
 }
 
 .md-tag {
@@ -682,6 +700,6 @@ footer {
 </style>
 </head>
 <body class='typora-export' >
-<div  id='write'  class = 'is-mac'><h4><a name='header-n0' class='md-header-anchor '></a>Titzanyic</h4><p>我是一名 Android 开发者，2015 年毕业于中州大学，至今已经积累了 4 年的工作经验。主要从事 Android 平台的开发工作。由于个人兴趣，学习 Python 语言，并能够从事相应的开发工作。</p><p>&nbsp;</p><h4><a name='header-n66' class='md-header-anchor '></a>找到我</h4><p>我一般发表言论会选择在 Twitter 上，你可以关注我 <a href='https://twitter.com/Titzanyic'>@Titzanyic</a></p><p>不错的照片我选择分享在 <a href='https://www.instagram.com/titzanyic/'>Instagram</a></p><p>&nbsp;</p><h4><a name='header-n68' class='md-header-anchor '></a>文章推荐</h4><ol><li><a href='https://mp.weixin.qq.com/s/UhBHZ4ioslDPb9-b8O4B5g'>2018 年好物和服务推荐</a></li><li><a href='https://mp.weixin.qq.com/s/0WQ4hMnNaAvc7qx7dKQz0A'>我在群晖上运行了哪些服务</a></li><li><a href='https://mp.weixin.qq.com/s/v-OnLVoiipW_SudCCc8m3Q'>NAS 家庭存储云介绍</a></li><li><a href='https://sspai.com/post/40333'>如何更好地使用 Kindle</a></li></ol><p>&nbsp;</p><p>觉得不错？可以关注<strong>公众号</strong>获得更新提示：<strong>nashome</strong></p><p><img src='http://img.yingxiaoshi.com//20190219163701.png' alt='' referrerPolicy='no-referrer' /></p><p>你可以添加我的<strong>微信</strong>，我会在朋友圈输出有价值的分享</p><p><img src='http://img.yingxiaoshi.com//20190219164554.png' alt='' referrerPolicy='no-referrer' /></p></div>
+<div  id='write'  class = 'is-mac'><h4><a name='header-n0' class='md-header-anchor '></a>Titzanyic</h4><p>Hello，我是一名 Developer。具有四年的软件开发经验，目前主要从事 Android 和 Python 的开发工作。我最常使用的硬件和服务大部分来自于 Apple 和 Google 两家公司。以下是我近期关注并输出分享的领域：</p><ul><li>效率工具：通过不断的更新和优化工具来提高自己的生产效率；</li><li>智能设备：手机、电脑、NAS等通过科技大大提高我们的幸福感；</li><li>应用服务：推荐我使用的应用服务给你，让生活更便捷，工作更顺利；</li><li>技巧教程：分享一些互联网技术相关的小知识和小技巧；</li><li>科普生活：学会科学理性的思考，并不断的修正和完善；</li><li>投资理财：合理的投资理财让金钱真正为自己所用。</li></ul><p>&nbsp;</p><p>平时生活中的一些想法和分享会随时发布在 Twitter 上，你可以关注我 <a href='https://twitter.com/Titzanyic'>@Titzanyic</a>， 拍的不错的照片我选择分享在  <a href='https://www.instagram.com/titzanyic/'>Instagram</a> 平台。这些都是国外一些不错的服务，推荐你也使用和关注。</p><p>&nbsp;</p><h4><a name='header-n8' class='md-header-anchor '></a>好文推荐</h4><p>挑选一些不错的文章推荐给你，希望能给你带来思考和帮助：</p><ol start='' ><li><a href='https://mp.weixin.qq.com/s/UhBHZ4ioslDPb9-b8O4B5g'>2018 年好物和服务推荐</a></li><li><a href='https://mp.weixin.qq.com/s/0WQ4hMnNaAvc7qx7dKQz0A'>我在群晖上运行了哪些服务</a></li><li><a href='https://mp.weixin.qq.com/s/v-OnLVoiipW_SudCCc8m3Q'>NAS 家庭存储云介绍</a></li><li><a href='https://sspai.com/post/40333'>如何更好地使用 Kindle</a></li><li><a href='https://mp.weixin.qq.com/s?__biz=MzIxMTQ5MzI0MA==&mid=2247483796&idx=1&sn=d2b7507aaf2fb090403595422d836af1&chksm=9755c983a02240953bbbad4d313b12809e49d1b0315e1813188856dd7efe2dc21b0cf61e99b0&token=1899638669&lang=zh_CN#rd'>学会使用官方文档</a></li><li><a href='https://mp.weixin.qq.com/s?__biz=MzIxMTQ5MzI0MA==&mid=2247483789&idx=1&sn=74b74ea3f705b2e951ee3c694266b5a1&chksm=9755c99aa022408cf4fb55e0cad616ddf0b99b7cc20a54355229cb566321f55486986ca278fa&token=1899638669&lang=zh_CN#rd'>做好密码管理</a> </li><li><a href='https://xiaozhuanlan.com/nashome'>NAS 云存储指南</a>（付费专栏）</li></ol><p>觉得不错？可以关注<strong>微信公众号</strong> 订阅，微信扫描二维码或搜索<strong>offline256</strong></p><p><img src='http://img.yingxiaoshi.com//20190220174803.jpg' alt='' referrerPolicy='no-referrer' /></p><p>你可以添加我的<strong>微信</strong>，我会在朋友圈持续输出有价值的分享</p><p><img src='http://img.yingxiaoshi.com/20190226101416.JPG' alt='' referrerPolicy='no-referrer' /></p></div>
 </body>
 </html>
